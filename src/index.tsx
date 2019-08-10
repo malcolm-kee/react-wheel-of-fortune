@@ -8,10 +8,7 @@ export interface WheelProps {
 }
 
 export const WheelOfFortune: React.FC<WheelProps> = props => {
-  const [wheelState, dispatch] = React.useReducer(
-    wheelStateReducer,
-    defaultState
-  );
+  const [wheelState, dispatch] = React.useReducer(wheelStateReducer, defaultState);
 
   React.useEffect(() => {
     let isLatest = true;
@@ -34,10 +31,7 @@ export const WheelOfFortune: React.FC<WheelProps> = props => {
   return (
     <div>
       Wheel of Fortune {wheelState.isRunning ? 'Running' : ''}
-      <button
-        onClick={() => dispatch(actions.startRun())}
-        disabled={wheelState.isRunning}
-      >
+      <button onClick={() => dispatch(actions.startRun())} disabled={wheelState.isRunning}>
         Run
       </button>
       <div className="wheel">
