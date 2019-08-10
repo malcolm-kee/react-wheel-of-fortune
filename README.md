@@ -1,5 +1,7 @@
 # react-wheel-of-fortune
 
+React wheel of fortune component.
+
 ## Commands
 
 TSDX scaffolds your new library inside `/src`, and also sets up a [Parcel-based](https://parceljs.org) playground for it inside `/example`.
