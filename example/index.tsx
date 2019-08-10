@@ -16,12 +16,15 @@ const App = () => {
   return (
     <div>
       {selected}
-      <WheelOfFortune
-        items={['Malcolm', 'Wendy', 'Pikachu', 'X-Men', 'Toby', 'Kids'].filter(
-          x => !selectedBefore.includes(x)
-        )}
-        onSelect={setSelected}
-      />
+      <div style={{ width: 300 }}>
+        <WheelOfFortune
+          // items={['Malcolm', 'Wendy', 'Pikachu', 'X-Men', 'Toby'].filter(
+          //   x => !selectedBefore.includes(x)
+          // )}
+          items={['Malcolm', 'Wendy', 'Toby']}
+          onSelect={setSelected}
+        />
+      </div>
     </div>
   );
 };
